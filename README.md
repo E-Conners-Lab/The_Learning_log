@@ -55,3 +55,13 @@ python manage.py runserver
   - Add journal entries under each topic
 
 > ⚠️ The public-facing user interface (registration, login, add/view entries) is not yet implemented.
+
+```
+The_Learning_log/
+├── learning_logs/        # Main app for topics and entries
+├── users/                # Handles login, logout, and registration
+├── templates/            # HTML templates
+├── static/               # Static files (optional styling)
+├── db.sqlite3            # Default database
+└── manage.py             # Django project launcher
+ 
