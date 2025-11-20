@@ -46,6 +46,7 @@ python manage.py migrate
 # Start the development server
 python manage.py runserver
 
+```
 ## 🧪 Usage
 
 - Visit `http://127.0.0.1:8000/admin` to manage Topics and Entries
