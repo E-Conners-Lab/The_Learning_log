@@ -56,7 +56,8 @@ python manage.py runserver
 
 > ⚠️ The public-facing user interface (registration, login, add/view entries) is not yet implemented.
 
-📁 Project Structure
+## 📁 Project Structure
+
 The_Learning_log/
 ├── learning_logs/        # Main app for topics and entries
 ├── users/                # Handles login, logout, and registration
