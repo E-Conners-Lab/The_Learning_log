@@ -65,4 +65,3 @@ The_Learning_log/
 ├── static/               # Static files (optional styling)
 ├── db.sqlite3            # Default database
 └── manage.py             # Django project launcher
- 
