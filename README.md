@@ -65,3 +65,12 @@ The_Learning_log/
 ├── static/               # Static files (optional styling)
 ├── db.sqlite3            # Default database
 └── manage.py             # Django project launcher
+
+
+## 🙌 Credits
+
+Built by following Python Crash Course by Eric Matthes
+
+Inspired by the idea of documenting and reflecting on learning
+
+Django Docs: https://docs.djangoproject.com/
