@@ -13,4 +13,4 @@ def topics(request):
     return render(request, 'learning_logs/topics.html', context)
 
 
-#Test
+#Test 2
