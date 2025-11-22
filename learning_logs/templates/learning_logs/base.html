@@ -27,7 +27,7 @@
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'learning_logs:topics' %}">Topics</a>
                   </li>
-                  {% is not user.is_authenticated %}
+                  {% if not user.is_authenticated %}
                   <li class="nav-item">
                       <a class="nav-link" href="{% url 'accounts:register' %}">Register</a>
                   </li>
