@@ -28,9 +28,6 @@
                       <a class="nav-link" href="{% url 'learning_logs:topics' %}">Topics</a>
                   </li>
                   {% if not user.is_authenticated %}
-                  <li class="nav-item">
-                      <a class="nav-link" href="{% url 'accounts:register' %}">Register</a>
-                  </li>
                   {% endif %}
               </ul> <!-- End of links on left side of navbar -->
 
