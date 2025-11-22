@@ -99,3 +99,13 @@ def delete_topic(request, topic_id):
         raise Http404
     topic.delete()
     return redirect('learning_logs:topics')
+
+@login_required
+def delete_entry(request, entry_id):
+    """Delete an entry if it belongs to the logged=in user."""
+    entry = Entry.objects.get(id=entry_id)
+    topic = entry.topic
+    if topic.owner != request.user:
+        raise Http404
+    entry.delete()
+    return redirect('learning_logs:topic', topic_id=topic.id)
