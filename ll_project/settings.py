@@ -31,10 +31,14 @@ ALLOWED_HOSTS = []
 # Application definition
 
 INSTALLED_APPS = [
-    # My apps
+    # My Apps.
     'learning_logs',
     'accounts',
-    # Default Django Apps
+
+    # Third party Apps.
+    'django_bootstrap5',
+
+    # Default Django Apps.
     'django.contrib.admin',
     'django.contrib.auth',
     'django.contrib.contenttypes',
