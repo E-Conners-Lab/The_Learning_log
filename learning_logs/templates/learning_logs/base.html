@@ -8,7 +8,6 @@
     {% load django_bootstrap5 %}
     {% bootstrap_css %}
     {% bootstrap_javascript %}
-
 </head>
 <body>
 
@@ -23,26 +22,23 @@
           </button>
 
           <div class="collapse navbar-collapse" id="navbarCollapse">
+              <!-- Left side of navbar -->
               <ul class="navbar-nav me-auto mb-2 mb-md-0">
-                  <li class="nav-item">
-                      <a class="nav-link" href="{% url 'learning_logs:topics' %}">Topics</a>
-                  </li>
-                  {% if not user.is_authenticated %}
-                  {% endif %}
-              </ul> <!-- End of links on left side of navbar -->
+                  <!-- "Topics" removed as per your request -->
+              </ul>
 
-              <!-- Account-related links -->
+              <!-- Right side of navbar - Account-related links -->
               <ul class="navbar-nav ms-auto mb-2 mb-md-0">
-
                   {% if user.is_authenticated %}
                     <li class="nav-item">
                       <span class="navbar-text me-2">Hello, {{ user.username }}</span>
                     </li>
                     <li class="nav-item">
-                    <form action="{% url 'accounts:logout' %}" method='post' class="d-inline">
-                        {% csrf_token %}
-                        <button name='submit' class='btn btn-outline-secondary btn-sm'>Log out</button>
-                    </form>
+                      <form action="{% url 'accounts:logout' %}" method="post" class="d-inline">
+                          {% csrf_token %}
+                          <button name="submit" class="btn btn-outline-secondary btn-sm">Log out</button>
+                      </form>
+                    </li>
                   {% else %}
                     <li class="nav-item">
                       <a class="nav-link" href="{% url 'accounts:register' %}">Register</a>
@@ -52,9 +48,9 @@
                     </li>
                   {% endif %}
               </ul>
-          </div> <!-- Closes collapsible parts of navbar -->
-      </div> <!-- Closes navbar's container -->
-  </nav> <!-- End of navbar -->
+          </div>
+      </div>
+  </nav>
 
   <main class="container">
       <div class="pb-2 mb-2 border-bottom">
