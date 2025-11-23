@@ -52,7 +52,6 @@ The project is configured to run locally with SQLite and can be deployed using G
 - **Deployment & DevOps**
   - `requirements.txt` for dependencies
   - `render.yaml` for deployment with Gunicorn
-  - `.platform.app.yaml` and `platformshconfig` for Platform.sh-style deployment
   - `requirements_remote.txt` for production dependencies
   - Basic GitHub Actions workflow (`.github/workflows/django.yml`) to install dependencies and run tests on pushes/PRs
 - **Data Management**
