@@ -1,4 +1,6 @@
+venv/
 ll_env/
+ll-env/
 __pycache__/
 *.sqlite3
 .DS_Store
