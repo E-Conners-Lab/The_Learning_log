@@ -79,7 +79,6 @@ The project is configured to run locally with SQLite and can be deployed using G
 7. Configured static file handling and `collectstatic` for deployment.
 8. Added deployment configuration:
    - `render.yaml` (Gunicorn entrypoint)
-   - `.platform.app.yaml` and `platformshconfig` for environment-based DB settings
    - `requirements_remote.txt` for production dependencies
 9. Set up CI with GitHub Actions to run Django tests on pushes and pull requests.
 
@@ -102,7 +101,6 @@ ll_project/
 ├── requirements.txt          # Core Python/Django dependencies
 ├── requirements_remote.txt   # Extra dependencies for remote deployment
 ├── render.yaml               # Render.com deployment configuration
-├── .platform.app.yaml        # Platform.sh app configuration
 ├── .github/
 │   └── workflows/
 │       └── django.yml        # GitHub Actions CI for tests
