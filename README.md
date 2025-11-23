@@ -214,8 +214,6 @@ This project includes multiple deployment-oriented files:
     - Install requirements
     - Run `collectstatic`
     - Serve via Gunicorn using `ll_project.wsgi`
-- **Platform.sh**
-  - `.platform.app.yaml` and `platformshconfig` dynamically configure the database as PostgreSQL based on environment variables.
 - **Static Files**
   - `STATIC_URL` and `STATIC_ROOT` are configured in `settings.py` so `collectstatic` can gather assets for production.
 
