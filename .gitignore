@@ -4,3 +4,17 @@ ll-env/
 __pycache__/
 *.sqlite3
 .DS_Store
+
+# PyCharm / VS Code / IDE stuff
+.idea/
+.vscode/
+
+# Django static collection output (if you generate locally)
+staticfiles/
+
+# Logs
+*.log
+
+# Environment files
+.env
+*.env
