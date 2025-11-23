@@ -234,7 +234,7 @@ This project is licensed under the **MIT License**. See the `LICENSE` file (if p
 
 If you are hosting Learning Log publicly (for example on Render), you can add your live URL here:
 
-- **Live Demo:** `https://the-learning-log.onrender.com/` (replace or remove if this changes)
+- **Live Demo:** `https://the-learning-log.onrender.com/` 
 
 ---
 
